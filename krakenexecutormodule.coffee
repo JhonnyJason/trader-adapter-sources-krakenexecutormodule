@@ -76,8 +76,8 @@ placeOrder = (order) ->
 
         type = order.type
         ordertype = "limit"
-        price = parseFloat(order.price).toFixed(2)
-        volume = parseFloat(order.volume).toFixed(2)
+        price = parseFloat(order.price)
+        volume = parseFloat(order.volume)
         data = {pair,type,ordertype,price,volume}
         # olog data
 
